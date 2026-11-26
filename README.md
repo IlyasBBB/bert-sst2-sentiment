@@ -63,6 +63,7 @@ En local (Python 3.10 ou plus) : `pip install -r requirements.txt`. Sans GPU, le
 | `notebook/bert_vs_tfidf_sst2.ipynb` | notebook complet, exécuté, avec toutes ses sorties |
 | `rapport/rapport_bert_sst2.pdf` | rapport technique de 16 pages |
 | `rapport/rapport_bert_sst2.md` | le même rapport en Markdown, lisible sur GitHub |
+| `demo/` | démo en ligne : publication du modèle sur le Hugging Face Hub et application Gradio (voir `demo/README.md`) |
 | `resultats/` | métriques (JSON), prédictions par phrase (CSV), figures, annotation des erreurs |
 
 ## Limites
