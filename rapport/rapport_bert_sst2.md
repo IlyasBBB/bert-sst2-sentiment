@@ -14,16 +14,16 @@ L'analyse des erreurs montre un avantage de BERT plus marqué sur les phrases de
 
 Pour dire si une critique est positive ou négative, une représentation TF-IDF décrit le texte par les mots et les bigrammes qu'il contient, sans tenir compte de leur ordre au-delà de deux mots. BERT produit au contraire une représentation de chaque mot qui dépend de toute la phrase, apprise au préalable sur un grand corpus. Ce TP mesure ce que cette différence change sur SST-2, dans un protocole identique pour les modèles comparés.
 
-La consigne du module 7 fixe le cadre : SST-2 (environ 67 000 exemples de critiques de films), le modèle bert-base-uncased et les bibliothèques `transformers`, `datasets` et scikit-learn. Il faut battre la baseline TF-IDF + régression logistique, atteindre environ 92 % d'accuracy en validation, puis comprendre les erreurs. Le mail du délégué demande trois livrables : un notebook avec le code BERT, le reporting des performances du modèle et la comparaison avec la baseline TF-IDF + régression logistique.
+Nous travaillons sur SST-2 (environ 67 000 exemples de critiques de films) avec le modèle bert-base-uncased et les bibliothèques `transformers`, `datasets` et scikit-learn. Le but est de battre la baseline TF-IDF + régression logistique en visant environ 92 % d'accuracy en validation, puis de comprendre les erreurs qui restent.
 
-Tableau : exigences du TP et constats
+Tableau : objectifs et constats
 
-| Exigence du TP | Critère vérifiable | Constat |
+| Objectif | Critère vérifiable | Constat |
 |---|---|---|
 | Baseline classique | TF-IDF + régression logistique | 81,88 % en validation |
 | Fine-tuning d'un Transformer | bert-base-uncased, 3 époques | 92,66 %, objectif atteint |
 | Stabilité du résultat | trois graines | de 92,43 % à 93,12 % |
-| Bonus du cours | BERT gelé contre fine-tuning complet | 85,32 % contre 92,66 % |
+| Apport du fine-tuning | BERT gelé contre fine-tuning complet | 85,32 % contre 92,66 % |
 | Comprendre les erreurs | dix phrases regroupées par cause | section 6 |
 
 Nous cherchons à savoir dans quelles situations l'adaptation de BERT améliore la prédiction par rapport à un classifieur fondé sur des caractéristiques lexicales, et d'où vient cette amélioration.
@@ -60,7 +60,7 @@ Les sous-syntagmes du train proviennent souvent d'une même phrase source. Un d�
 
 ## 3.1 Baseline TF-IDF + régression logistique
 
-Le texte est représenté en sac de mots pondéré par TF-IDF : un mot fréquent dans la phrase mais rare dans le corpus reçoit un poids élevé, et les bigrammes rendent un peu d'ordre (« not good »). Le `TfidfVectorizer` utilise une pondération sous-linéaire et une fréquence documentaire minimale de 2. Dix combinaisons sont évaluées sur dev : unigrammes ou unigrammes + bigrammes, avec C ∈ {0,3 ; 1 ; 3 ; 10 ; 30}. La configuration retenue utilise les n-grammes (1-2) et C = 30, avec 80,97 % sur dev et 71 017 caractéristiques. La régression logistique attribue un poids à chaque caractéristique, ce qui rend le modèle lisible : en section 5 du notebook, le bigramme « not bad » reçoit un poids nettement positif. Le cours recommande de toujours lancer ce type de modèle en premier. Ses limites tiennent à sa représentation : deux synonymes n'ont rien en commun, un mot jamais vu à l'entraînement est ignoré et le contexte au-delà de deux mots est perdu.
+Le texte est représenté en sac de mots pondéré par TF-IDF : un mot fréquent dans la phrase mais rare dans le corpus reçoit un poids élevé, et les bigrammes rendent un peu d'ordre (« not good »). Le `TfidfVectorizer` utilise une pondération sous-linéaire et une fréquence documentaire minimale de 2. Dix combinaisons sont évaluées sur dev : unigrammes ou unigrammes + bigrammes, avec C ∈ {0,3 ; 1 ; 3 ; 10 ; 30}. La configuration retenue utilise les n-grammes (1-2) et C = 30, avec 80,97 % sur dev et 71 017 caractéristiques. La régression logistique attribue un poids à chaque caractéristique, ce qui rend le modèle lisible : en section 5 du notebook, le bigramme « not bad » reçoit un poids nettement positif. Ses limites tiennent à sa représentation : deux synonymes n'ont rien en commun, un mot jamais vu à l'entraînement est ignoré et le contexte au-delà de deux mots est perdu.
 
 ## 3.2 Architecture de BERT et tokenisation
 
@@ -85,11 +85,11 @@ Tableau : configuration du fine-tuning
 | Calcul | Tesla T4, précision mixte fp16 avec GradScaler |
 | Sélection | meilleure accuracy sur dev, départage par la perte |
 
-La boucle PyTorch est écrite explicitement plutôt qu'avec `Trainer` : chaque étape (passage avant, perte d'entropie croisée, rétropropagation, pas de l'optimiseur) reste visible, avec `model.train()` en apprentissage et `model.eval()` sous `torch.no_grad()` en évaluation. Le meilleur checkpoint sur dev est sauvegardé puis rechargé avant l'évaluation finale. Le cours suggère deux époques ; nous en faisons trois et laissons dev choisir la meilleure. Le cours propose aussi `max_len = 64`. Nous gardons 128 : le texte le plus long mesuré compte 62 jetons, 0,00 % des textes dépassent la limite, et avec le rembourrage dynamique par lot cette marge ne coûte rien.
+La boucle PyTorch est écrite explicitement plutôt qu'avec `Trainer` : chaque étape (passage avant, perte d'entropie croisée, rétropropagation, pas de l'optimiseur) reste visible, avec `model.train()` en apprentissage et `model.eval()` sous `torch.no_grad()` en évaluation. Le meilleur checkpoint sur dev est sauvegardé puis rechargé avant l'évaluation finale. Devlin et al. (2019) recommandent deux à quatre époques ; nous en faisons trois et laissons dev choisir la meilleure. Une limite de 64 jetons aurait suffi, mais nous gardons 128 : le texte le plus long mesuré compte 62 jetons, 0,00 % des textes dépassent la limite, et avec le rembourrage dynamique par lot cette marge ne coûte rien.
 
 ## 3.4 BERT gelé
 
-Le cours propose de comparer le fine-tuning complet à une version où BERT reste gelé et où seule une couche de classification est apprise. Nous encodons les jeux train_fit, dev et validation avec le BERT pré-entraîné, sans aucune adaptation, puis nous entraînons une régression logistique sur ces vecteurs standardisés, ce qui se rapproche d'un entraînement de la seule tête. Deux représentations sont testées : le vecteur de sortie de `[CLS]` et la moyenne des vecteurs de tous les jetons non masqués. Le paramètre C est choisi sur dev dans {0,01 ; 0,1 ; 1 ; 10} (C = 0,10 pour `[CLS]`, C = 0,01 pour la moyenne), puis la variante retenue est celle qui a la meilleure accuracy sur dev. L'encodage des trois jeux prend 0,8 min sur le T4 et la cellule entière 2,5 min.
+Pour mesurer ce qu'apporte le fine-tuning complet, nous le comparons à une version où BERT reste gelé et où seule une couche de classification est apprise. Nous encodons les jeux train_fit, dev et validation avec le BERT pré-entraîné, sans aucune adaptation, puis nous entraînons une régression logistique sur ces vecteurs standardisés, ce qui se rapproche d'un entraînement de la seule tête. Deux représentations sont testées : le vecteur de sortie de `[CLS]` et la moyenne des vecteurs de tous les jetons non masqués. Le paramètre C est choisi sur dev dans {0,01 ; 0,1 ; 1 ; 10} (C = 0,10 pour `[CLS]`, C = 0,01 pour la moyenne), puis la variante retenue est celle qui a la meilleure accuracy sur dev. L'encodage des trois jeux prend 0,8 min sur le T4 et la cellule entière 2,5 min.
 
 ## 3.5 Évaluation et tests statistiques
 
@@ -110,13 +110,13 @@ Tableau : résultats sur les 872 phrases de la validation officielle
 | BERT gelé, moyenne | 85,32 % | [82,8 % ; 87,5 %] | 0,843 | 0,874 | 0,858 | 0,853 | 0,937 |
 | BERT fine-tuné | 92,66 % | [90,7 % ; 94,2 %] | 0,920 | 0,937 | 0,929 | 0,927 | 0,976 |
 
-BERT fine-tuné dépasse la baseline sur toutes les métriques : +10,78 points en accuracy et +0,063 en ROC-AUC. Il dépasse aussi le niveau d'environ 92 % fixé par la consigne. Le gain le plus net porte sur la précision (+12,7 points) : la baseline classe trop de phrases en positif. Pour situer ces chiffres, Devlin et al. (2019) rapportent 93,5 % sur le test SST-2 avec BERT-base ; le cours indique qu'on doit obtenir un résultat du même ordre en validation.
+BERT fine-tuné dépasse la baseline sur toutes les métriques : +10,78 points en accuracy et +0,063 en ROC-AUC. Il dépasse aussi l'objectif d'environ 92 %. Le gain le plus net porte sur la précision (+12,7 points) : la baseline classe trop de phrases en positif. Pour situer ces chiffres, Devlin et al. (2019) rapportent 93,5 % sur le test SST-2 avec BERT-base.
 
 ## 4.2 Matrices de confusion et courbes ROC
 
 ![Accuracy et matrices de confusion sur la validation officielle (sortie du notebook, section 8).](../resultats/report_overview.png)
 
-BERT commet 64 erreurs : 36 faux positifs et 28 faux négatifs. Ses erreurs sont donc à peu près équilibrées entre les deux classes, ce que le cours attend d'un bon modèle. La baseline en commet 158, dont 101 faux positifs et 57 faux négatifs : elle penche nettement vers la classe positive, majoritaire dans le train.
+BERT commet 64 erreurs : 36 faux positifs et 28 faux négatifs. Ses erreurs sont donc à peu près équilibrées entre les deux classes. La baseline en commet 158, dont 101 faux positifs et 57 faux négatifs : elle penche nettement vers la classe positive, majoritaire dans le train.
 
 ![Courbes ROC sur les mêmes 872 phrases de validation.](../resultats/report_roc.png)
 
@@ -132,7 +132,7 @@ Tableau : évolution du fine-tuning par époque (graine 42)
 
 ![Perte et accuracy sur dev au fil des époques.](../resultats/bert_learning_curves.png)
 
-L'époque 2 a la meilleure accuracy sur dev et c'est elle qui est retenue. À l'époque 3, l'accuracy sur dev ne bouge presque plus. La perte sur dev remonte, alors que la perte d'entraînement continue de baisser. Le modèle commence à surapprendre, sans que l'accuracy en souffre encore ; c'est cohérent avec les deux à quatre époques conseillées par le cours.
+L'époque 2 a la meilleure accuracy sur dev et c'est elle qui est retenue. À l'époque 3, l'accuracy sur dev ne bouge presque plus. La perte sur dev remonte, alors que la perte d'entraînement continue de baisser. Le modèle commence à surapprendre, sans que l'accuracy en souffre encore ; c'est cohérent avec les deux à quatre époques conseillées par Devlin et al. (2019).
 
 ## 4.4 Variabilité entre graines
 
@@ -158,7 +158,7 @@ Tableau : comparaisons appariées autour de BERT gelé (variante retenue sur dev
 | BERT gelé − TF-IDF | +3,4 points | [+0,7 ; +6,3] | p = 0,0208 |
 | BERT fine-tuné − BERT gelé | +7,3 points | [+5,2 ; +9,4] | p = 3,62 × 10⁻¹¹ |
 
-Les deux intervalles excluent 0. Sans aucune adaptation, les vecteurs de BERT portent déjà assez d'information pour battre la baseline. Le fine-tuning complet apporte ensuite le gain le plus grand, ce qui rejoint la remarque de l'enseignant : le bonus « montre en général un écart net en faveur du fine-tuning complet ». La conclusion ne dépend pas de la variante : avec `[CLS]`, l'écart avec le fine-tuning vaut +6,3 points (IC [+4,1 ; +8,6]). Le classifieur posé sur les vecteurs n'est pas tout à fait le même dans les deux cas (régression logistique sur vecteurs standardisés d'un côté, *pooler* et couche linéaire de l'autre), si bien que cet écart estime l'apport du fine-tuning sans l'isoler parfaitement.
+Les deux intervalles excluent 0. Sans aucune adaptation, les vecteurs de BERT portent déjà assez d'information pour battre la baseline. Le fine-tuning complet apporte ensuite le gain le plus grand. La conclusion ne dépend pas de la variante : avec `[CLS]`, l'écart avec le fine-tuning vaut +6,3 points (IC [+4,1 ; +8,6]). Le classifieur posé sur les vecteurs n'est pas tout à fait le même dans les deux cas (régression logistique sur vecteurs standardisés d'un côté, *pooler* et couche linéaire de l'autre), si bien que cet écart estime l'apport du fine-tuning sans l'isoler parfaitement.
 
 ## 4.6 Coût d'entraînement et d'inférence
 
@@ -231,7 +231,7 @@ Seule H2 est appuyée : sur les phrases de plus de 30 mots, l'avantage de BERT d
 
 ## 6.3 Paires minimales et phrases personnelles
 
-Le cours demande de tester le modèle sur ses propres phrases. Nous l'avons fait de deux façons (section 9.6 du notebook). La première est un jeu de 276 phrases construites par gabarits. On y trouve la même phrase avec et sans négation (« the movie is good », « the movie is not good », « the movie is n't good »). S'y ajoutent des phrases à deux propositions reliées par *but*, dont l'avis est celui de la seconde. Ces phrases isolent la négation et l'opposition, à la manière des tests comportementaux de Ribeiro et al. (2020). Une phrase niée reçoit l'étiquette inverse de l'affirmation ; le taux d'inversion, lui, ne dépend pas de cette convention.
+Nous avons aussi testé les modèles sur des phrases écrites par nous, de deux façons (section 9.6 du notebook). La première est un jeu de 276 phrases construites par gabarits. On y trouve la même phrase avec et sans négation (« the movie is good », « the movie is not good », « the movie is n't good »). S'y ajoutent des phrases à deux propositions reliées par *but*, dont l'avis est celui de la seconde. Ces phrases isolent la négation et l'opposition, à la manière des tests comportementaux de Ribeiro et al. (2020). Une phrase niée reçoit l'étiquette inverse de l'affirmation ; le taux d'inversion, lui, ne dépend pas de cette convention.
 
 Tableau : accuracy et taux d'inversion sur les paires minimales
 
@@ -266,7 +266,7 @@ Sur ces 872 phrases, et sans intervalle de confiance sur l'ECE, BERT paraît mie
 
 ## 6.5 Dix erreurs de BERT regroupées par cause
 
-Nous avons lu les 64 erreurs de BERT (fichier `erreurs_bert_a_annoter.csv`, section 9.8 du notebook) et attribué à chacune la cause la plus décisive, selon les catégories du cours : négation, ironie, avis mitigé, vocabulaire rare, étiquette discutable, ou autre. Le tableau 14 en montre dix, au moins une par cause, en privilégiant les plus confiantes et les plus lisibles.
+Nous avons lu les 64 erreurs de BERT (fichier `erreurs_bert_a_annoter.csv`, section 9.8 du notebook) et attribué à chacune la cause la plus décisive, parmi six catégories : négation, ironie, avis mitigé, vocabulaire rare, étiquette discutable, ou autre. Le tableau 14 en montre dix, au moins une par cause, en privilégiant les plus confiantes et les plus lisibles.
 
 Tableau : dix erreurs de BERT regroupées par cause (validation officielle)
 
@@ -372,19 +372,3 @@ Wolf, T. et al. (2020). Transformers: State-of-the-Art Natural Language Processi
 Les résultats proviennent d'une seule exécution complète du notebook `SST2_BERT_vs_TFIDF_NLP_Projet.ipynb` sur Google Colab, avec un GPU Tesla T4 et la précision mixte float16. Versions : Python 3.13.16, PyTorch 2.14.1+cu130, transformers 5.22.1 (Wolf et al., 2020), datasets 4.8.5, scikit-learn 1.6.1, SciPy 1.16.3, pandas 2.2.3, NumPy 2.4.6.
 
 La graine principale est 42 ; les graines 43 et 44 servent à la répétition du fine-tuning. Le bootstrap utilise 5 000 tirages et dev est tiré du train nettoyé avec une fraction de 0,05. Le fine-tuning principal dure 10,8 min ; les deux graines supplémentaires demandent chacune un entraînement complet avec la même configuration. La dernière cellule du notebook exporte toutes les métriques, prédictions et figures dans l'archive `results_sst2.zip`. Aucun modèle n'a été réentraîné pour la rédaction de ce rapport.
-
-# Annexe B. Correspondance avec les consignes
-
-Tableau : où chaque exigence est traitée
-
-| Exigence | Notebook | Rapport |
-|---|---|---|
-| Notebook avec le code BERT | sections 6, 6.1, 7, 7.1 | sections 3 et 4 |
-| Reporting des performances | sections 7, 8, 8.1 | sections 4 et 5 |
-| Comparaison avec TF-IDF + régression logistique | sections 5, 8, 8.1 | sections 4, 5 et 6 |
-| Tableau baseline / BERT, accuracy et F1 | section 8 | tableau 4 |
-| Matrice de confusion de BERT fine-tuné | section 8 | figure 2 |
-| Dix erreurs regroupées par cause | sections 9.8 et 9.9 | tableau 14 |
-| Courte synthèse et bonus BERT gelé | sections 7.1, 10.3 et 10.4 | encadré du résumé, tableau 7 |
-| Tokenisation WordPiece | section 6.1 | section 3 |
-| Phrases personnelles | section 9.6 | section 6.3 |
