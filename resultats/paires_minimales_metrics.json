@@ -1,0 +1,17 @@
+{
+  "n_phrases": 276,
+  "tfidf|affirmation": 0.95,
+  "bert|affirmation": 1.0,
+  "tfidf|n\u00e9gation \u00ab not \u00bb": 0.48333333333333334,
+  "bert|n\u00e9gation \u00ab not \u00bb": 1.0,
+  "tfidf|n\u00e9gation \u00ab n't \u00bb": 0.05,
+  "bert|n\u00e9gation \u00ab n't \u00bb": 1.0,
+  "tfidf|opposition \u00ab + but \u2212 \u00bb": 0.75,
+  "bert|opposition \u00ab + but \u2212 \u00bb": 1.0,
+  "tfidf|opposition \u00ab \u2212 but + \u00bb": 0.20833333333333334,
+  "bert|opposition \u00ab \u2212 but + \u00bb": 1.0,
+  "tfidf|inversion n\u00e9gation \u00ab not \u00bb": 0.43333333333333335,
+  "tfidf|inversion n\u00e9gation \u00ab n't \u00bb": 0.0,
+  "bert|inversion n\u00e9gation \u00ab not \u00bb": 1.0,
+  "bert|inversion n\u00e9gation \u00ab n't \u00bb": 1.0
+}

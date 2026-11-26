@@ -1,0 +1,14 @@
+{
+  "n_avec": 489,
+  "pct_avec": 56.07798165137615,
+  "mots_distincts": 871,
+  "vocabulaire_tfidf_unigrammes": 12977,
+  "tfidf_acc_avec": 0.8159509202453987,
+  "tfidf_acc_sans": 0.8224543080939948,
+  "tfidf_fisher_odds": 1.0448916408668731,
+  "tfidf_fisher_p": 0.8594809473828136,
+  "bert_acc_avec": 0.9263803680981595,
+  "bert_acc_sans": 0.9268929503916449,
+  "bert_fisher_odds": 1.0075685903500473,
+  "bert_fisher_p": 1.0
+}

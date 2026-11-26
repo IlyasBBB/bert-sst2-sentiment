@@ -1,0 +1,277 @@
+gabarit,phrase,label,paire,p_tfidf,p_bert,pred_tfidf,ok_tfidf,pred_bert,ok_bert
+affirmation,the movie is good .,1,the movie|good,0.9974108655303278,0.99930537,1,True,1,True
+négation « not »,the movie is not good .,0,the movie|good,0.0004093587325076456,0.0018748618,0,True,0,True
+négation « n't »,the movie is n't good .,0,the movie|good,0.9974108655303278,0.001827943,1,False,0,True
+affirmation,the movie is great .,1,the movie|great,0.8645092395622815,0.999355,1,True,1,True
+négation « not »,the movie is not great .,0,the movie|great,0.003026369971704284,0.0020829707,0,True,0,True
+négation « n't »,the movie is n't great .,0,the movie|great,0.8645092395622815,0.0022213378,1,False,0,True
+affirmation,the movie is funny .,1,the movie|funny,0.2990041049876832,0.9993724,0,False,1,True
+négation « not »,the movie is not funny .,0,the movie|funny,0.0017795074127263265,0.0022343625,0,True,0,True
+négation « n't »,the movie is n't funny .,0,the movie|funny,0.2990041049876832,0.0020547446,0,True,0,True
+affirmation,the movie is moving .,1,the movie|moving,0.9613786132573169,0.9993988,1,True,1,True
+négation « not »,the movie is not moving .,0,the movie|moving,0.026962530087928198,0.0017173837,0,True,0,True
+négation « n't »,the movie is n't moving .,0,the movie|moving,0.9613786132573169,0.0018350843,1,False,0,True
+affirmation,the movie is brilliant .,1,the movie|brilliant,0.9849123556245956,0.99937975,1,True,1,True
+négation « not »,the movie is not brilliant .,0,the movie|brilliant,0.020048183552619413,0.0030753699,0,True,0,True
+négation « n't »,the movie is n't brilliant .,0,the movie|brilliant,0.9849123556245956,0.0029178553,1,False,0,True
+affirmation,the movie is enjoyable .,1,the movie|enjoyable,0.9767713019334546,0.99929726,1,True,1,True
+négation « not »,the movie is not enjoyable .,0,the movie|enjoyable,0.07415666634817557,0.0029178553,0,True,0,True
+négation « n't »,the movie is n't enjoyable .,0,the movie|enjoyable,0.9767713019334546,0.0030278354,1,False,0,True
+affirmation,the movie is bad .,0,the movie|bad,0.02131011584924987,0.0014158706,0,True,0,True
+négation « not »,the movie is not bad .,1,the movie|bad,0.08150928106957947,0.99918,0,False,1,True
+négation « n't »,the movie is n't bad .,1,the movie|bad,0.02131011584924987,0.9982522,0,False,1,True
+affirmation,the movie is boring .,0,the movie|boring,0.005838979358411561,0.0013250224,0,True,0,True
+négation « not »,the movie is not boring .,1,the movie|boring,8.679006582633382e-06,0.99648935,0,False,1,True
+négation « n't »,the movie is n't boring .,1,the movie|boring,0.005838979358411561,0.9915216,0,False,1,True
+affirmation,the movie is dull .,0,the movie|dull,0.000932567737762666,0.0014437558,0,True,0,True
+négation « not »,the movie is not dull .,1,the movie|dull,5.693573783068501e-06,0.9970421,0,False,1,True
+négation « n't »,the movie is n't dull .,1,the movie|dull,0.000932567737762666,0.9954615,0,False,1,True
+affirmation,the movie is awful .,0,the movie|awful,0.004928204550938192,0.0016517006,0,True,0,True
+négation « not »,the movie is not awful .,1,the movie|awful,1.025024756979724e-05,0.9956176,0,False,1,True
+négation « n't »,the movie is n't awful .,1,the movie|awful,0.004928204550938192,0.97925514,0,False,1,True
+affirmation,the movie is predictable .,0,the movie|predictable,0.007416178343151748,0.0020229532,0,True,0,True
+négation « not »,the movie is not predictable .,1,the movie|predictable,1.2167246237893887e-05,0.9984988,0,False,1,True
+négation « n't »,the movie is n't predictable .,1,the movie|predictable,0.007416178343151748,0.99770385,0,False,1,True
+affirmation,the movie is tedious .,0,the movie|tedious,0.006105425889549706,0.0014241793,0,True,0,True
+négation « not »,the movie is not tedious .,1,the movie|tedious,8.912340101795648e-06,0.9943581,0,False,1,True
+négation « n't »,the movie is n't tedious .,1,the movie|tedious,0.006105425889549706,0.9894192,0,False,1,True
+affirmation,this film is good .,1,this film|good,0.9999604844301038,0.99929583,1,True,1,True
+négation « not »,this film is not good .,0,this film|good,0.027203485431591325,0.0018137436,0,True,0,True
+négation « n't »,this film is n't good .,0,this film|good,0.9999604844301038,0.0017308303,1,False,0,True
+affirmation,this film is great .,1,this film|great,0.9980317542204196,0.9993538,1,True,1,True
+négation « not »,this film is not great .,0,this film|great,0.1507853013653715,0.0020427648,0,True,0,True
+négation « n't »,this film is n't great .,0,this film|great,0.9980317542204196,0.0020269002,1,False,0,True
+affirmation,this film is funny .,1,this film|funny,0.9791712393731635,0.999355,1,True,1,True
+négation « not »,this film is not funny .,0,this film|funny,0.10601147781653364,0.0022650503,0,True,0,True
+négation « n't »,this film is n't funny .,0,this film|funny,0.9791712393731635,0.0020911063,1,False,0,True
+affirmation,this film is moving .,1,this film|moving,0.9993114979935651,0.99940693,1,True,1,True
+négation « not »,this film is not moving .,0,this film|moving,0.7443180312829717,0.0015011822,1,False,0,True
+négation « n't »,this film is n't moving .,0,this film|moving,0.9993114979935651,0.0016388679,1,False,0,True
+affirmation,this film is brilliant .,1,this film|brilliant,0.9996677341094983,0.99937004,1,True,1,True
+négation « not »,this film is not brilliant .,0,this film|brilliant,0.491206494746312,0.0029694452,0,True,0,True
+négation « n't »,this film is n't brilliant .,0,this film|brilliant,0.9996677341094983,0.0026678042,1,False,0,True
+affirmation,this film is enjoyable .,1,this film|enjoyable,0.9995099764501265,0.9993,1,True,1,True
+négation « not »,this film is not enjoyable .,0,this film|enjoyable,0.8856379932880143,0.002784609,1,False,0,True
+négation « n't »,this film is n't enjoyable .,0,this film|enjoyable,0.9995099764501265,0.0028671587,1,False,0,True
+affirmation,this film is bad .,0,this film|bad,0.6564994571237093,0.0013885234,1,False,0,True
+négation « not »,this film is not bad .,1,this film|bad,0.8329403990077701,0.9993255,1,True,1,True
+négation « n't »,this film is n't bad .,1,this film|bad,0.6564994571237093,0.99896574,1,True,1,True
+affirmation,this film is boring .,0,this film|boring,0.2988784042107718,0.0012545945,0,True,0,True
+négation « not »,this film is not boring .,1,this film|boring,0.0013496865294062622,0.99780875,0,False,1,True
+négation « n't »,this film is n't boring .,1,this film|boring,0.2988784042107718,0.99600047,0,False,1,True
+affirmation,this film is dull .,0,this film|dull,0.2389464172400229,0.0013723688,0,True,0,True
+négation « not »,this film is not dull .,1,this film|dull,0.0009948234934198112,0.9985134,0,False,1,True
+négation « n't »,this film is n't dull .,1,this film|dull,0.2389464172400229,0.9984238,0,False,1,True
+affirmation,this film is awful .,0,this film|awful,0.2500182702830565,0.0018639287,0,True,0,True
+négation « not »,this film is not awful .,1,this film|awful,0.0014706329818078732,0.9980122,0,False,1,True
+négation « n't »,this film is n't awful .,1,this film|awful,0.2500182702830565,0.991339,0,False,1,True
+affirmation,this film is predictable .,0,this film|predictable,0.405635596123828,0.0016613905,0,True,0,True
+négation « not »,this film is not predictable .,1,this film|predictable,0.001950445602218419,0.9990872,0,False,1,True
+négation « n't »,this film is n't predictable .,1,this film|predictable,0.405635596123828,0.99888176,0,False,1,True
+affirmation,this film is tedious .,0,this film|tedious,0.28848546932460084,0.0013885234,0,True,0,True
+négation « not »,this film is not tedious .,1,this film|tedious,0.0012712228066742064,0.9973374,0,False,1,True
+négation « n't »,this film is n't tedious .,1,this film|tedious,0.28848546932460084,0.9948902,0,False,1,True
+affirmation,the story is good .,1,the story|good,0.9975535143327049,0.9992706,1,True,1,True
+négation « not »,the story is not good .,0,the story|good,0.000981081290815398,0.0021827165,0,True,0,True
+négation « n't »,the story is n't good .,0,the story|good,0.9975535143327049,0.0019994322,1,False,0,True
+affirmation,the story is great .,1,the story|great,0.9025632988468834,0.99937123,1,True,1,True
+négation « not »,the story is not great .,0,the story|great,0.0063654819633309255,0.0021489493,0,True,0,True
+négation « n't »,the story is n't great .,0,the story|great,0.9025632988468834,0.0021827165,1,False,0,True
+affirmation,the story is funny .,1,the story|funny,0.4373224338249784,0.9993575,0,False,1,True
+négation « not »,the story is not funny .,0,the story|funny,0.003964356820397205,0.0023459075,0,True,0,True
+négation « n't »,the story is n't funny .,0,the story|funny,0.4373224338249784,0.0021239663,0,True,0,True
+affirmation,the story is moving .,1,the story|moving,0.9701484908232554,0.9994093,1,True,1,True
+négation « not »,the story is not moving .,0,the story|moving,0.05649077294214767,0.0016613905,0,True,0,True
+négation « n't »,the story is n't moving .,0,the story|moving,0.9701484908232554,0.0017649074,1,False,0,True
+affirmation,the story is brilliant .,1,the story|brilliant,0.9876616674273386,0.9993845,1,True,1,True
+négation « not »,the story is not brilliant .,0,the story|brilliant,0.03650334088257869,0.0032540052,0,True,0,True
+négation « n't »,the story is n't brilliant .,0,the story|brilliant,0.9876616674273386,0.0028560124,1,False,0,True
+affirmation,the story is enjoyable .,1,the story|enjoyable,0.9814729393878753,0.9992792,1,True,1,True
+négation « not »,the story is not enjoyable .,0,the story|enjoyable,0.1375462743020124,0.0031175725,0,True,0,True
+négation « n't »,the story is n't enjoyable .,0,the story|enjoyable,0.9814729393878753,0.0030753699,1,False,0,True
+affirmation,the story is bad .,0,the story|bad,0.04386617202997873,0.0015041127,0,True,0,True
+négation « not »,the story is not bad .,1,the story|bad,0.13717729539885787,0.9992342,0,False,1,True
+négation « n't »,the story is n't bad .,1,the story|bad,0.04386617202997873,0.9982522,0,False,1,True
+affirmation,the story is boring .,0,the story|boring,0.012521576433662569,0.0014550628,0,True,0,True
+négation « not »,the story is not boring .,1,the story|boring,3.276073885635149e-05,0.99783427,0,False,1,True
+négation « n't »,the story is n't boring .,1,the story|boring,0.012521576433662569,0.9945095,0,False,1,True
+affirmation,the story is dull .,0,the story|dull,0.0034645929595887247,0.0015041127,0,True,0,True
+négation « not »,the story is not dull .,1,the story|dull,2.294716715248051e-05,0.9978802,0,False,1,True
+négation « n't »,the story is n't dull .,1,the story|dull,0.0034645929595887247,0.99631435,0,False,1,True
+affirmation,the story is awful .,0,the story|awful,0.010473539879048852,0.0019006216,0,True,0,True
+négation « not »,the story is not awful .,1,the story|awful,3.723427119767338e-05,0.9967077,0,False,1,True
+négation « n't »,the story is n't awful .,1,the story|awful,0.010473539879048852,0.983518,0,False,1,True
+affirmation,the story is predictable .,0,the story|predictable,0.016568460723854834,0.0022126967,0,True,0,True
+négation « not »,the story is not predictable .,1,the story|predictable,4.569499853798505e-05,0.99891615,0,False,1,True
+négation « n't »,the story is n't predictable .,1,the story|predictable,0.016568460723854834,0.99851626,0,False,1,True
+affirmation,the story is tedious .,0,the story|tedious,0.01276994811956327,0.0015517841,0,True,0,True
+négation « not »,the story is not tedious .,1,the story|tedious,3.251849591415096e-05,0.99629277,0,False,1,True
+négation « n't »,the story is n't tedious .,1,the story|tedious,0.01276994811956327,0.9932156,0,False,1,True
+affirmation,the acting is good .,1,the acting|good,0.9978969143187568,0.9993345,1,True,1,True
+négation « not »,the acting is not good .,0,the acting|good,0.0028314074695355855,0.0023781236,0,True,0,True
+négation « n't »,the acting is n't good .,0,the acting|good,0.9978969143187568,0.0023051251,1,False,0,True
+affirmation,the acting is great .,1,the acting|great,0.9377418479859617,0.99937004,1,True,1,True
+négation « not »,the acting is not great .,0,the acting|great,0.01581095244202593,0.0025809042,0,True,0,True
+négation « n't »,the acting is n't great .,0,the acting|great,0.9377418479859617,0.002828336,1,False,0,True
+affirmation,the acting is funny .,1,the acting|funny,0.6156578531916832,0.99936754,1,True,1,True
+négation « not »,the acting is not funny .,0,the acting|funny,0.010478636134190726,0.0026112478,0,True,0,True
+négation « n't »,the acting is n't funny .,0,the acting|funny,0.6156578531916832,0.0022518474,1,False,0,True
+affirmation,the acting is moving .,1,the acting|moving,0.979228887704989,0.9994081,1,True,1,True
+négation « not »,the acting is not moving .,0,the acting|moving,0.12981844415243532,0.0018102109,0,True,0,True
+négation « n't »,the acting is n't moving .,0,the acting|moving,0.979228887704989,0.0018243828,1,False,0,True
+affirmation,the acting is brilliant .,1,the acting|brilliant,0.9908423500864175,0.9993881,1,True,1,True
+négation « not »,the acting is not brilliant .,0,the acting|brilliant,0.07594506244445016,0.0036928526,0,True,0,True
+négation « n't »,the acting is n't brilliant .,0,the acting|brilliant,0.9908423500864175,0.0034296035,1,False,0,True
+affirmation,the acting is enjoyable .,1,the acting|enjoyable,0.9866333576894706,0.99928755,1,True,1,True
+négation « not »,the acting is not enjoyable .,0,the acting|enjoyable,0.2670310559282247,0.0033374047,0,True,0,True
+négation « n't »,the acting is n't enjoyable .,0,the acting|enjoyable,0.9866333576894706,0.0034564098,1,False,0,True
+affirmation,the acting is bad .,0,the acting|bad,0.10093536239310388,0.001582342,0,True,0,True
+négation « not »,the acting is not bad .,1,the acting|bad,0.2478687279905794,0.9991736,0,False,1,True
+négation « n't »,the acting is n't bad .,1,the acting|bad,0.10093536239310388,0.998345,0,False,1,True
+affirmation,the acting is boring .,0,the acting|boring,0.03125430420898538,0.0014048679,0,True,0,True
+négation « not »,the acting is not boring .,1,the acting|boring,0.00014972710425731402,0.99727446,0,False,1,True
+négation « n't »,the acting is n't boring .,1,the acting|boring,0.03125430420898538,0.9918595,0,False,1,True
+affirmation,the acting is dull .,0,the acting|dull,0.013961590789874802,0.0014924251,0,True,0,True
+négation « not »,the acting is not dull .,1,the acting|dull,0.0001116146812849104,0.99769044,0,False,1,True
+négation « n't »,the acting is n't dull .,1,the acting|dull,0.013961590789874802,0.99690056,0,False,1,True
+affirmation,the acting is awful .,0,the acting|awful,0.02603187975013501,0.0020033333,0,True,0,True
+négation « not »,the acting is not awful .,1,the acting|awful,0.0001642487452363857,0.99611557,0,False,1,True
+négation « n't »,the acting is n't awful .,1,the acting|awful,0.02603187975013501,0.98187524,0,False,1,True
+affirmation,the acting is predictable .,0,the acting|predictable,0.04255149651502282,0.0019304943,0,True,0,True
+négation « not »,the acting is not predictable .,1,the acting|predictable,0.00020675406331087975,0.99892044,0,False,1,True
+négation « n't »,the acting is n't predictable .,1,the acting|predictable,0.04255149651502282,0.99844813,0,False,1,True
+affirmation,the acting is tedious .,0,the acting|tedious,0.031135632528627246,0.0015792594,0,True,0,True
+négation « not »,the acting is not tedious .,1,the acting|tedious,0.0001443167006130695,0.9958418,0,False,1,True
+négation « n't »,the acting is n't tedious .,1,the acting|tedious,0.031135632528627246,0.99256825,0,False,1,True
+affirmation,the ending is good .,1,the ending|good,0.9980595258305393,0.99932015,1,True,1,True
+négation « not »,the ending is not good .,0,the ending|good,0.008094525149709863,0.0023734942,0,True,0,True
+négation « n't »,the ending is n't good .,0,the ending|good,0.9980595258305393,0.0019955388,1,False,0,True
+affirmation,the ending is great .,1,the ending|great,0.9580473098806488,0.9993687,1,True,1,True
+négation « not »,the ending is not great .,0,the ending|great,0.03833197562841787,0.002463007,0,True,0,True
+négation « n't »,the ending is n't great .,0,the ending|great,0.9580473098806488,0.0024201942,1,False,0,True
+affirmation,the ending is funny .,1,the ending|funny,0.7531860539937729,0.99937856,1,True,1,True
+négation « not »,the ending is not funny .,0,the ending|funny,0.027005160425705825,0.0025509123,0,True,0,True
+négation « n't »,the ending is n't funny .,0,the ending|funny,0.7531860539937729,0.002169992,1,False,0,True
+affirmation,the ending is moving .,1,the ending|moving,0.9846537520316857,0.9993411,1,True,1,True
+négation « not »,the ending is not moving .,0,the ending|moving,0.2584231577294981,0.0021239663,0,True,0,True
+négation « n't »,the ending is n't moving .,0,the ending|moving,0.9846537520316857,0.0020870345,1,False,0,True
+affirmation,the ending is brilliant .,1,the ending|brilliant,0.992782229779181,0.99939406,1,True,1,True
+négation « not »,the ending is not brilliant .,0,the ending|brilliant,0.14974830969738456,0.003991728,0,True,0,True
+négation « n't »,the ending is n't brilliant .,0,the ending|brilliant,0.992782229779181,0.0034496887,1,False,0,True
+affirmation,the ending is enjoyable .,1,the ending|enjoyable,0.9897743472516233,0.99933714,1,True,1,True
+négation « not »,the ending is not enjoyable .,0,the ending|enjoyable,0.43839704172847976,0.0031236487,0,True,0,True
+négation « n't »,the ending is n't enjoyable .,0,the ending|enjoyable,0.9897743472516233,0.0030515103,1,False,0,True
+affirmation,the ending is bad .,0,the ending|bad,0.2070918360665062,0.0017856745,0,True,0,True
+négation « not »,the ending is not bad .,1,the ending|bad,0.3982261853515314,0.99893504,0,False,1,True
+négation « n't »,the ending is n't bad .,1,the ending|bad,0.2070918360665062,0.9978677,0,False,1,True
+affirmation,the ending is boring .,0,the ending|boring,0.0738347070318593,0.0015947326,0,True,0,True
+négation « not »,the ending is not boring .,1,the ending|boring,0.0006511601411578075,0.99656373,0,False,1,True
+négation « n't »,the ending is n't boring .,1,the ending|boring,0.0738347070318593,0.991339,0,False,1,True
+affirmation,the ending is dull .,0,the ending|dull,0.046879133129777185,0.0018172832,0,True,0,True
+négation « not »,the ending is not dull .,1,the ending|dull,0.0005118239003321056,0.9971717,0,False,1,True
+négation « n't »,the ending is n't dull .,1,the ending|dull,0.046879133129777185,0.9950563,0,False,1,True
+affirmation,the ending is awful .,0,the ending|awful,0.06187354913208796,0.0018494504,0,True,0,True
+négation « not »,the ending is not awful .,1,the ending|awful,0.0006943310697953481,0.99575186,0,False,1,True
+négation « n't »,the ending is n't awful .,1,the ending|awful,0.06187354913208796,0.9775,0,False,1,True
+affirmation,the ending is predictable .,0,the ending|predictable,0.10060034038102261,0.0024534282,0,True,0,True
+négation « not »,the ending is not predictable .,1,the ending|predictable,0.0008850023723168218,0.9984573,0,False,1,True
+négation « n't »,the ending is n't predictable .,1,the ending|predictable,0.10060034038102261,0.99797314,0,False,1,True
+affirmation,the ending is tedious .,0,the ending|tedious,0.07235853531611018,0.0016166501,0,True,0,True
+négation « not »,the ending is not tedious .,1,the ending|tedious,0.0006148158029938777,0.9944126,0,False,1,True
+négation « n't »,the ending is n't tedious .,1,the ending|tedious,0.07235853531611018,0.98803884,0,False,1,True
+opposition « + but − »,"the acting is good , but the story is bad .",0,,0.7440436005420423,0.013273888,1,False,0,True
+opposition « − but + »,"the acting is bad , but the story is good .",1,,0.587383871195056,0.98961186,1,True,1,True
+opposition « + but − »,"the acting is good , but the story is boring .",0,,0.5305746332091144,0.0037362208,1,False,0,True
+opposition « − but + »,"the acting is boring , but the story is good .",1,,0.46589521071302864,0.99592197,0,False,1,True
+opposition « + but − »,"the acting is good , but the story is dull .",0,,0.5346942737846783,0.0055657243,1,False,0,True
+opposition « − but + »,"the acting is dull , but the story is good .",1,,0.4630295843848229,0.99666256,0,False,1,True
+opposition « + but − »,"the acting is good , but the story is awful .",0,,0.4885303096958423,0.031321116,0,True,0,True
+opposition « − but + »,"the acting is awful , but the story is good .",1,,0.4628414626334129,0.997537,0,False,1,True
+opposition « + but − »,"the acting is great , but the story is bad .",0,,0.1957490895625846,0.006564249,0,True,0,True
+opposition « − but + »,"the acting is bad , but the story is great .",1,,0.149325726354684,0.9893063,0,False,1,True
+opposition « + but − »,"the acting is great , but the story is boring .",0,,0.08672839069717886,0.0030813639,0,True,0,True
+opposition « − but + »,"the acting is boring , but the story is great .",1,,0.08672839069717886,0.9924374,0,False,1,True
+opposition « + but − »,"the acting is great , but the story is dull .",0,,0.06977449157568835,0.004239825,0,True,0,True
+opposition « − but + »,"the acting is dull , but the story is great .",1,,0.06977449157568835,0.99384296,0,False,1,True
+opposition « + but − »,"the acting is great , but the story is awful .",0,,0.07503700655243031,0.015335821,0,True,0,True
+opposition « − but + »,"the acting is awful , but the story is great .",1,,0.10065304723560518,0.99502736,0,False,1,True
+opposition « + but − »,"the acting is funny , but the story is bad .",0,,0.10636703306136297,0.0075041577,0,True,0,True
+opposition « − but + »,"the acting is bad , but the story is funny .",1,,0.04039024772601833,0.99508506,0,False,1,True
+opposition « + but − »,"the acting is funny , but the story is boring .",0,,0.0471057598785244,0.0035588038,0,True,0,True
+opposition « − but + »,"the acting is boring , but the story is funny .",1,,0.020234005430823238,0.99647564,0,False,1,True
+opposition « + but − »,"the acting is funny , but the story is dull .",0,,0.03659130377375428,0.0048391186,0,True,0,True
+opposition « − but + »,"the acting is dull , but the story is funny .",1,,0.013627425299995709,0.9965904,0,False,1,True
+opposition « + but − »,"the acting is funny , but the story is awful .",0,,0.04098010127880156,0.02525085,0,True,0,True
+opposition « − but + »,"the acting is awful , but the story is funny .",1,,0.0269234065596771,0.997813,0,False,1,True
+opposition « + but − »,"the acting is moving , but the story is bad .",0,,0.3738466464712335,0.0071214284,0,True,0,True
+opposition « − but + »,"the acting is bad , but the story is moving .",1,,0.2873787699000667,0.9912717,0,False,1,True
+opposition « + but − »,"the acting is moving , but the story is boring .",0,,0.18865283436507682,0.0033504234,0,True,0,True
+opposition « − but + »,"the acting is boring , but the story is moving .",1,,0.18865283436507682,0.9932681,0,False,1,True
+opposition « + but − »,"the acting is moving , but the story is dull .",0,,0.16854525435246887,0.0048391186,0,True,0,True
+opposition « − but + »,"the acting is dull , but the story is moving .",1,,0.16854525435246887,0.9938309,0,False,1,True
+opposition « + but − »,"the acting is moving , but the story is awful .",0,,0.16512493609062817,0.015967654,0,True,0,True
+opposition « − but + »,"the acting is awful , but the story is moving .",1,,0.2025542846558172,0.9953454,0,False,1,True
+opposition « + but − »,"the music is good , but the plot is bad .",0,,0.6904162669096907,0.009936418,1,False,0,True
+opposition « − but + »,"the music is bad , but the plot is good .",1,,0.5203953128266838,0.9795506,1,True,1,True
+opposition « + but − »,"the music is good , but the plot is boring .",0,,0.46194110074804223,0.003607617,0,True,0,True
+opposition « − but + »,"the music is boring , but the plot is good .",1,,0.3929858877799248,0.99227446,0,False,1,True
+opposition « + but − »,"the music is good , but the plot is dull .",0,,0.4596320696187961,0.0051596225,0,True,0,True
+opposition « − but + »,"the music is dull , but the plot is good .",1,,0.3822555176554017,0.99368566,0,False,1,True
+opposition « + but − »,"the music is good , but the plot is awful .",0,,0.4203162658604153,0.024283867,0,True,0,True
+opposition « − but + »,"the music is awful , but the plot is good .",1,,0.39615336029593984,0.99632865,0,False,1,True
+opposition « + but − »,"the music is great , but the plot is bad .",0,,0.14912518342590866,0.006062155,0,True,0,True
+opposition « − but + »,"the music is bad , but the plot is great .",1,,0.11466969510949276,0.9743129,0,False,1,True
+opposition « + but − »,"the music is great , but the plot is boring .",0,,0.06349939146248834,0.0032037182,0,True,0,True
+opposition « − but + »,"the music is boring , but the plot is great .",1,,0.06349939146248834,0.9801483,0,False,1,True
+opposition « + but − »,"the music is great , but the plot is dull .",0,,0.048615340673044044,0.0041420166,0,True,0,True
+opposition « − but + »,"the music is dull , but the plot is great .",1,,0.048615340673044044,0.9862179,0,False,1,True
+opposition « + but − »,"the music is great , but the plot is awful .",0,,0.05477315203335213,0.012845959,0,True,0,True
+opposition « − but + »,"the music is awful , but the plot is great .",1,,0.07637353056652116,0.99187535,0,False,1,True
+opposition « + but − »,"the music is funny , but the plot is bad .",0,,0.07956833149519389,0.006837205,0,True,0,True
+opposition « − but + »,"the music is bad , but the plot is funny .",1,,0.029333946509536385,0.99193794,0,False,1,True
+opposition « + but − »,"the music is funny , but the plot is boring .",0,,0.03443917676931839,0.003802225,0,True,0,True
+opposition « − but + »,"the music is boring , but the plot is funny .",1,,0.01406171050312149,0.99371004,0,False,1,True
+opposition « + but − »,"the music is funny , but the plot is dull .",0,,0.025623056702959373,0.004914949,0,True,0,True
+opposition « − but + »,"the music is dull , but the plot is funny .",1,,0.00891185988545331,0.99390244,0,False,1,True
+opposition « + but − »,"the music is funny , but the plot is awful .",0,,0.029924037098626274,0.023286305,0,True,0,True
+opposition « − but + »,"the music is awful , but the plot is funny .",1,,0.019537911673501142,0.99712163,0,False,1,True
+opposition « + but − »,"the music is moving , but the plot is bad .",0,,0.30583989750350066,0.0056859064,0,True,0,True
+opposition « − but + »,"the music is bad , but the plot is moving .",1,,0.23275231842178554,0.9820655,0,False,1,True
+opposition « + but − »,"the music is moving , but the plot is boring .",0,,0.14531826801185638,0.0033897834,0,True,0,True
+opposition « − but + »,"the music is boring , but the plot is moving .",1,,0.14531826801185638,0.9849563,0,False,1,True
+opposition « + but − »,"the music is moving , but the plot is dull .",0,,0.12485733712428279,0.004582765,0,True,0,True
+opposition « − but + »,"the music is dull , but the plot is moving .",1,,0.12485733712428279,0.98609793,0,False,1,True
+opposition « + but − »,"the music is moving , but the plot is awful .",0,,0.12635227204171876,0.013325148,0,True,0,True
+opposition « − but + »,"the music is awful , but the plot is moving .",1,,0.16046407529505394,0.9930559,0,False,1,True
+opposition « + but − »,"the cast is good , but the script is bad .",0,,0.9306205952730434,0.017012626,1,False,0,True
+opposition « − but + »,"the cast is bad , but the script is good .",1,,0.866241854120076,0.97112906,1,True,1,True
+opposition « + but − »,"the cast is good , but the script is boring .",0,,0.8375876663347845,0.0054059,1,False,0,True
+opposition « − but + »,"the cast is boring , but the script is good .",1,,0.8144154045407382,0.9923341,1,True,1,True
+opposition « + but − »,"the cast is good , but the script is dull .",0,,0.8565434657997907,0.009002837,1,False,0,True
+opposition « − but + »,"the cast is dull , but the script is good .",1,,0.8357514784212614,0.9941233,1,True,1,True
+opposition « + but − »,"the cast is good , but the script is awful .",0,,0.8122605584305435,0.03305475,1,False,0,True
+opposition « − but + »,"the cast is awful , but the script is good .",1,,0.7926320869025745,0.99600047,1,True,1,True
+opposition « + but − »,"the cast is great , but the script is bad .",0,,0.56464742776949,0.008124709,1,False,0,True
+opposition « − but + »,"the cast is bad , but the script is great .",1,,0.45245889840575687,0.9771538,0,False,1,True
+opposition « + but − »,"the cast is great , but the script is boring .",0,,0.33222092199723996,0.00421516,0,True,0,True
+opposition « − but + »,"the cast is boring , but the script is great .",1,,0.33222092199723996,0.9843514,0,False,1,True
+opposition « + but − »,"the cast is great , but the script is dull .",0,,0.3183651053579102,0.0058653383,0,True,0,True
+opposition « − but + »,"the cast is dull , but the script is great .",1,,0.3183651053579102,0.988369,0,False,1,True
+opposition « + but − »,"the cast is great , but the script is awful .",0,,0.2961899012265915,0.015291642,0,True,0,True
+opposition « − but + »,"the cast is awful , but the script is great .",1,,0.33883296015521935,0.9917163,0,False,1,True
+opposition « + but − »,"the cast is funny , but the script is bad .",0,,0.3702261666418682,0.0102883,0,True,0,True
+opposition « − but + »,"the cast is bad , but the script is funny .",1,,0.17166808830259622,0.9901211,0,False,1,True
+opposition « + but − »,"the cast is funny , but the script is boring .",0,,0.1938432741549705,0.005179713,0,True,0,True
+opposition « − but + »,"the cast is boring , but the script is funny .",1,,0.10250164471386092,0.99341017,0,False,1,True
+opposition « + but − »,"the cast is funny , but the script is dull .",0,,0.17645301332608468,0.0075187185,0,True,0,True
+opposition « − but + »,"the cast is dull , but the script is funny .",1,,0.08467412287704693,0.9941233,0,False,1,True
+opposition « + but − »,"the cast is funny , but the script is awful .",0,,0.17085534769863703,0.035846926,0,True,0,True
+opposition « − but + »,"the cast is awful , but the script is funny .",1,,0.11671535426812843,0.9966365,0,False,1,True
+opposition « + but − »,"the cast is moving , but the script is bad .",0,,0.7507125264499168,0.0069441274,1,False,0,True
+opposition « − but + »,"the cast is bad , but the script is moving .",1,,0.6450399471458549,0.97887486,1,True,1,True
+opposition « + but − »,"the cast is moving , but the script is boring .",0,,0.5361100771278161,0.0040780627,1,False,0,True
+opposition « − but + »,"the cast is boring , but the script is moving .",1,,0.5361100771278161,0.9853843,1,True,1,True
+opposition « + but − »,"the cast is moving , but the script is dull .",0,,0.5406664301029822,0.006050398,1,False,0,True
+opposition « − but + »,"the cast is dull , but the script is moving .",1,,0.5406664301029822,0.9864938,1,True,1,True
+opposition « + but − »,"the cast is moving , but the script is awful .",0,,0.4935224187890849,0.013969155,0,True,0,True
+opposition « − but + »,"the cast is awful , but the script is moving .",1,,0.5274407957496039,0.99268264,1,True,1,True

@@ -1,0 +1,20 @@
+{
+  "tfidf": {
+    "ece": 0.06980015522543864,
+    "brier": 0.12739773505516458,
+    "temperature": 1.8561602084112763,
+    "ece_apres_T": 0.028954626003711327,
+    "brier_apres_T": 0.12246232591574853,
+    "pct_erreurs_confiantes": 25.31645569620253,
+    "confiance_moyenne_erreurs": 0.7600594057844705
+  },
+  "bert": {
+    "ece": 0.04841889784059625,
+    "brier": 0.062110181057361755,
+    "temperature": 1.683767371520507,
+    "ece_apres_T": 0.012820763894614881,
+    "brier_apres_T": 0.05808399950297281,
+    "pct_erreurs_confiantes": 62.5,
+    "confiance_moyenne_erreurs": 0.887801745575
+  }
+}

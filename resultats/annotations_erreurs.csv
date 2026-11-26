@@ -1,0 +1,65 @@
+idx,cause,commentaire,retenue
+183,ironie,Éloge empoisonné ; la prédiction suit le sens littéral de « enjoy it ».,oui
+791,avis mitigé,"Deux jugements autour de « but » : BERT prédit comme la seconde partie, l'étiquette suit la première.",oui
+95,étiquette discutable,« riveting » est un éloge et le reste décrit le sujet du film ; l'étiquette négative surprend.,non
+519,étiquette discutable,« compelling » est positif et le deuil est le sujet ; l'étiquette négative se discute.,oui
+544,avis mitigé,« although » oppose l'intensité de Huppert à « anything but fun » ; la prédiction de BERT correspond à la première partie.,non
+282,étiquette discutable,La phrase finit sur « has little else to offer » ; l'étiquette positive se défend mal.,oui
+695,ironie,Le film serait si lent que le lecteur DVD s'arrête de lui-même.,oui
+464,avis mitigé,"« intriguing documentary » puis « emotionally diluted » : la prédiction de BERT correspond à la critique, l'étiquette à l'éloge.",non
+699,étiquette discutable,"« routine , harmless diversion and little else » se lit plutôt comme un avis tiède ou négatif.",non
+271,étiquette discutable,« as unseemly as its title suggests » ne dit pas clairement si le côté inconvenant est une qualité.,non
+92,étiquette discutable,"La phrase juge le personnage de Roger, pas le film ; aucune des deux étiquettes ne s'impose.",non
+724,négation,Le « n't » retourne tout le sens ; BERT prédit pourtant positif.,oui
+230,avis mitigé,"« made without much thought » puis « best watched that way » : l'éloge final, à double sens, porte l'étiquette positive.",non
+112,étiquette discutable,« hilariously inept and ridiculous » peut être un éloge du nanar ou une critique ; l'étiquette positive se discute.,non
+764,ironie,« get ready to take off ... the other direction » : la chute invite à fuir la salle.,non
+646,avis mitigé,« the worse it gets » contre « pretty good » au début : BERT prédit comme la fin de la phrase.,oui
+118,ironie,« every nanosecond » exagère pour dire qu'on s'ennuie ; la prédiction de BERT correspond plutôt à « far more pleasurable ».,non
+399,avis mitigé,"La critique « only superficially understands » est suivie d'un compliment minimal, « does n't hold them in contempt » ; la prédiction de BERT est positive.",non
+579,étiquette discutable,La phrase décrit l'univers du film sans jugement explicite ; l'avis négatif reste implicite.,non
+115,ironie,« valedictorian at the school for soft landings » : le titre de major de promotion est une moquerie.,non
+604,avis mitigé,« technical prowess » est aussitôt retourné par « ends up selling his film short » ; la prédiction de BERT reste positive.,non
+501,étiquette discutable,« but its brains are in no particular place at all » porte la fin de la phrase ; l'étiquette positive surprend.,non
+580,ironie,Être « worse than expected » pour un film d'horreur est présenté comme un exploit que « ghost ship » réussit.,non
+121,ironie,« the art of ripping people off » accuse le film d'arnaquer son public sous couvert d'en décrire le sujet.,non
+93,avis mitigé,« failure » et « glorious » se combinent en un éloge ; la prédiction de BERT est négative.,non
+546,avis mitigé,"« morose and humorless » puis « although flawed , is to be commended » : l'étiquette suit l'éloge final, la prédiction de BERT les critiques.",non
+846,étiquette discutable,"Simple description du genre et des thèmes, sans jugement ; l'étiquette négative ne se lit pas dans la phrase.",non
+645,vocabulaire rare,"La phrase repose sur la réplique « frankly , my dear , i do n't give a damn » : il faut la reconnaître pour comprendre le désintérêt.",non
+358,négation,La négation fait de « cloying » et « preachy » un compliment ; BERT prédit négatif.,oui
+22,vocabulaire rare,"Tout repose sur Holden Caulfield, héros de « L'Attrape-cœurs » : sans la référence, la critique est invisible.",oui
+626,étiquette discutable,« as cool as a documentary can get » peut être sincère ou moqueur ; on ne peut pas trancher.,non
+829,vocabulaire rare,L'expression « hit the skids » (péricliter) porte seule l'avis négatif.,non
+736,étiquette discutable,« rueful laughter » et un public très restreint ne font pas un avis clairement négatif.,non
+248,négation,« not some series of carefully structured plot points » rejette un défaut ; la prédiction de BERT est pourtant négative.,non
+312,ironie,Dire que le jeu vidéo sera plus amusant que le film est une comparaison moqueuse.,non
+273,étiquette discutable,"« exactly what the title indicates , a report » sonne comme une pique ; l'étiquette positive se discute.",non
+422,avis mitigé,"Le rythme est loué (« adroitly , and without fuss ») mais la fin parle de « inanity » et de « datedness » ; la prédiction de BERT correspond à la fin.",non
+446,négation,« nothing but a sticky-sweet soap » réduit le film à un mélo ; la prédiction de BERT est positive malgré cela.,non
+673,étiquette discutable,« out of control » et « the what much more than the why » sonnent comme des reproches ; l'étiquette positive se discute.,non
+509,autre,Compliment imagé sur la durée du film (« crushes a best selling novel into a timeframe ») ; la prédiction de BERT est négative.,non
+171,ironie,« rarely has leukemia looked so shimmering and benign » reproche au film d'embellir la maladie.,non
+771,négation,"« ca n't hide the giant achilles ' heel » : la négation retourne les éloges du début, mais la prédiction de BERT est positive.",non
+832,ironie,"« manages to show life in all of its banality » ressemble à un éloge, mais « the intention is quite the opposite » le retourne.",non
+685,négation,« no screen fantasy-adventure ... has the showmanship » est un superlatif positif construit avec « no ».,non
+69,autre,"Avis négatif sans détour, que BERT classe positif.",oui
+801,autre,"Critique imagée (« thirsty for reflection », « adolescent qualities ») sans mot franchement négatif.",non
+411,avis mitigé,« i do n't mind having my heartstrings pulled » puis « but do n't treat me like a fool » : le second membre porte l'avis.,non
+142,autre,Question rhétorique (« what better message ... ? ») qui vaut affirmation positive.,non
+728,négation,Double négation : « can not be said to suck » est un éloge modeste ; la prédiction de BERT est négative.,non
+707,négation,« no telegraphing is too obvious » veut dire que le film ne recule devant aucune ficelle.,non
+266,étiquette discutable,"Description du contenu d'un documentaire, sans jugement explicite.",non
+172,négation,« ca n't wait for the sequel » est une expression d'impatience positive malgré le « n't ».,non
+324,autre,"Les émotions fortes (« appalled », « outraged », « errant tear ») sont présentées comme l'effet recherché du film.",non
+375,étiquette discutable,La comparaison avec le film « say it is n't so ! » peut se lire comme un compliment ou comme une pique ; l'étiquette positive se discute.,non
+494,avis mitigé,« showcases carvey 's talent » puis « but not nearly enough » : l'avis négatif vient après le « but ».,non
+561,avis mitigé,"« estrogen overdose movies » puis « except that the writing , acting ... are a lot better » : l'éloge final porte l'étiquette.",non
+618,vocabulaire rare,Les références à Kieslowski et à « winter sleepers » portent la comparaison défavorable.,non
+749,étiquette discutable,« no heartstring untugged and no liberal cause unplundered » sonne comme un reproche ; l'étiquette positive se discute.,non
+670,vocabulaire rare,« hack-artist trick » et « ooky-spookies » portent l'avis négatif.,non
+527,ironie,« all the excitement of eating oatmeal » : l'excitation promise est celle d'un bol de porridge.,non
+656,étiquette discutable,« so little movie » ferme la phrase sur un reproche ; l'étiquette positive se discute.,non
+760,avis mitigé,« a manual of precinct cliches » puis « but it moves fast enough » : l'étiquette suit la fin ; la prédiction de BERT reste proche de l'hésitation.,non
+292,autre,Comparaison implicite (« a soap opera rather than a chronicle ») ; la prédiction de BERT reste proche de l'hésitation.,non
+220,vocabulaire rare,« socio-histo-political treatise » et « deconstructed with poignancy » : vocabulaire savant qui porte l'éloge.,non

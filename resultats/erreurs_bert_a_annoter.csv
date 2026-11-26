@@ -1,0 +1,65 @@
+idx,sentence,label,p_bert,p_tfidf,confiance,baseline_juste,negation,contrast,n_words,oov_mots
+183,"the lower your expectations , the more you 'll enjoy it .",0,0.99898964,0.9487869045571656,0.99898964,False,False,False,12,
+791,"it 's somewhat clumsy and too lethargically paced -- but its story about a mysterious creature with psychic abilities offers a solid build-up , a terrific climax , and some nice chills along the way .",0,0.99890125,0.8051113624993694,0.99890125,False,False,True,36,
+95,this riveting world war ii moral suspense story deals with the shadow side of american culture : racial prejudice in its ugly and diverse forms .,0,0.99843603,0.6061183814844343,0.99843603,False,False,False,26,
+519,moretti 's compelling anatomy of grief and the difficult process of adapting to loss .,0,0.9983802,0.6022228849294592,0.9983802,False,False,False,15,adapting anatomy moretti
+544,"although huppert 's intensity and focus has a raw exhilaration about it , the piano teacher is anything but fun .",0,0.99712163,0.9996821487073576,0.99712163,False,False,True,21,exhilaration
+282,"while there 's something intrinsically funny about sir anthony hopkins saying ` get in the car , bitch , ' this jerry bruckheimer production has little else to offer",1,0.0032730645,0.3664829785131169,0.9967269355,False,False,False,29,bitch intrinsically sir
+695,"sit through this one , and you wo n't need a magic watch to stop time ; your dvd player will do it for you .",0,0.99671423,0.9765547110181674,0.99671423,False,True,False,26,
+464,intriguing documentary which is emotionally diluted by focusing on the story 's least interesting subject .,1,0.0047183693,0.9133928545636087,0.9952816307,True,False,False,16,diluted
+699,"... routine , harmless diversion and little else .",1,0.004962942,0.0118301448294215,0.995037058,False,False,False,9,
+271,as unseemly as its title suggests .,1,0.0055873864,0.1109804152809176,0.9944126136,False,False,False,7,
+92,"you wo n't like roger , but you will quickly recognize him .",0,0.99371004,0.7066850636678141,0.99371004,False,True,True,13,
+724,it 's everything you do n't go to the movies for .,0,0.99369794,0.594521228636514,0.99369794,False,True,False,12,
+230,reign of fire looks as if it was made without much thought -- and is best watched that way .,1,0.006463138,0.8850821369785703,0.993536862,True,True,False,20,
+112,hilariously inept and ridiculous .,1,0.008968053,0.0057831797470604,0.991031947,False,False,False,5,
+764,"movie fans , get ready to take off ... the other direction .",0,0.99083894,0.0750582156042554,0.99083894,True,False,False,13,
+646,"the longer the movie goes , the worse it gets , but it 's actually pretty good in the first few minutes .",0,0.99060565,0.8347910480195009,0.99060565,False,False,True,23,
+118,every nanosecond of the the new guy reminds you that you could be doing something else far more pleasurable .,0,0.99021614,0.9050098890973594,0.99021614,False,False,False,20,nanosecond
+399,"if director michael dowse only superficially understands his characters , he does n't hold them in contempt .",0,0.9881765,0.3577906687332055,0.9881765,True,True,False,18,dowse
+579,"every dance becomes about seduction , where backstabbing and betrayals are celebrated , and sex is currency .",0,0.98646784,0.3391923001229023,0.98646784,True,False,False,18,backstabbing betrayals currency seduction
+115,sam mendes has become valedictorian at the school for soft landings and easy ways out .,0,0.9848838,0.7150042152513869,0.9848838,False,False,False,16,landings valedictorian
+604,vera 's technical prowess ends up selling his film short ; he smoothes over hard truths even as he uncovers them .,0,0.98389363,0.48247868257312,0.98389363,True,False,False,22,smoothes vera
+501,"harrison 's flowers puts its heart in the right place , but its brains are in no particular place at all .",1,0.018422542,0.7039087257129549,0.981577458,True,True,True,22,
+580,"it takes a certain kind of horror movie to qualify as ` worse than expected , ' but ghost ship somehow manages to do exactly that .",0,0.9797647,0.0357660183378512,0.9797647,True,False,True,27,
+121,it seems to me the film is about the art of ripping people off without ever letting them consciously know you have done so,0,0.979354,0.8404423646769587,0.979354,False,True,False,24,
+93,if steven soderbergh 's ` solaris ' is a failure it is a glorious failure .,1,0.020764738,0.0426760214841353,0.979235262,False,False,False,16,
+546,"on the heels of the ring comes a similarly morose and humorless horror movie that , although flawed , is to be commended for its straight-ahead approach to creepiness .",1,0.026180504,0.3788513394779704,0.973819496,False,False,True,30,commended
+846,"an absurdist comedy about alienation , separation and loss .",0,0.96768624,0.4297095630659457,0.96768624,True,False,False,10,
+645,"the words , ` frankly , my dear , i do n't give a damn , ' have never been more appropriate .",0,0.9621432,0.1899069973096831,0.9621432,True,True,False,23,
+358,( d ) oes n't bother being as cloying or preachy as equivalent evangelical christian movies -- maybe the filmmakers know that the likely audience will already be among the faithful .,1,0.03850233,0.0911601623260488,0.96149767,False,True,False,32,evangelical oes
+22,holden caulfield did it better .,0,0.9587699,0.4601307103695901,0.9587699,True,False,False,6,caulfield
+626,this flick is about as cool and crowd-pleasing as a documentary can get .,1,0.041423477,0.9401407254811373,0.958576523,True,False,False,14,
+829,teen movies have really hit the skids .,0,0.9568766,0.768752949286819,0.9568766,False,False,False,8,skids
+736,american chai encourages rueful laughter at stereotypes only an indian-american would recognize .,0,0.9511422,0.6472391951426079,0.9511422,False,False,False,13,
+248,"a full world has been presented onscreen , not some series of carefully structured plot points building to a pat resolution .",1,0.049958523,0.0594311988699958,0.950041477,False,True,False,22,
+312,i 'll bet the video game is a lot more fun than the film .,0,0.94479126,0.9137145631900968,0.94479126,False,False,False,15,
+273,"minority report is exactly what the title indicates , a report .",1,0.055412795,0.0396968232122976,0.944587205,False,False,False,12,indicates
+422,"it moves quickly , adroitly , and without fuss ; it does n't give you time to reflect on the inanity -- and the cold war datedness -- of its premise .",1,0.059537485,0.0064538924753931,0.940462515,False,True,False,32,adroitly datedness inanity
+446,"with its dogged hollywood naturalism and the inexorable passage of its characters toward sainthood , windtalkers is nothing but a sticky-sweet soap .",0,0.9313377,0.1290234135826897,0.9313377,True,True,True,23,inexorable passage sainthood
+673,"drops you into a dizzying , volatile , pressure-cooker of a situation that quickly snowballs out of control , while focusing on the what much more than the why .",1,0.0708162,0.0011204463302479,0.9291838,False,False,False,30,dizzying snowballs
+509,a movie that successfully crushes a best selling novel into a timeframe that mandates that you avoid the godzilla sized soda .,1,0.085785836,0.939014969048861,0.914214164,True,False,False,22,crushes mandates soda timeframe
+171,rarely has leukemia looked so shimmering and benign .,0,0.8794577,0.0979004336317776,0.8794577,True,False,False,9,benign leukemia shimmering
+771,"very special effects , brilliantly bold colors and heightened reality ca n't hide the giant achilles ' heel in `` stuart little 2 `` : there 's just no story , folks .",0,0.8728902,0.3660414684609048,0.8728902,True,True,False,33,achilles heel
+832,manages to show life in all of its banality when the intention is quite the opposite .,0,0.8708172,0.2740661331922993,0.8708172,True,False,False,17,intention
+685,no screen fantasy-adventure in recent memory has the showmanship of clones ' last 45 minutes .,1,0.1308397,0.1360871887315457,0.8691603,False,True,False,16,45 showmanship
+69,"this one is definitely one to skip , even for horror movie fanatics .",0,0.8597815,0.3770506084355315,0.8597815,True,False,False,14,
+801,"this film seems thirsty for reflection , itself taking on adolescent qualities .",0,0.8543993,0.9512716378123178,0.8543993,False,False,False,13,thirsty
+411,"i do n't mind having my heartstrings pulled , but do n't treat me like a fool .",0,0.8456558,0.1827538553613538,0.8456558,True,True,True,18,
+142,what better message than ` love thyself ' could young women of any size receive ?,1,0.1570722,0.9612460041444514,0.8429278,True,False,False,16,thyself
+728,"but taken as a stylish and energetic one-shot , the queen of the damned can not be said to suck .",1,0.16505408,0.1168457938716166,0.83494592,False,True,True,21,
+707,no telegraphing is too obvious or simplistic for this movie .,0,0.82810634,5.904375231257154e-05,0.82810634,True,True,False,11,telegraphing
+266,"a coda in every sense , the pinochet case splits time between a minute-by-minute account of the british court 's extradition chess game and the regime 's talking-head survivors .",1,0.18765317,0.1294931493097173,0.81234683,False,False,False,30,chess extradition regime splits
+172,it seems like i have been waiting my whole life for this movie and now i ca n't wait for the sequel .,1,0.1939858,0.2415977965963642,0.8060142,False,True,False,23,
+324,"you 'll gasp appalled and laugh outraged and possibly , watching the spectacle of a promising young lad treading desperately in a nasty sea , shed an errant tear .",1,0.20817894,0.9288824781574584,0.79182106,True,False,False,30,appalled errant outraged shed
+375,we have n't seen such hilarity since say it is n't so !,1,0.2192539,0.7529872339433966,0.7807461,True,True,False,13,
+494,"it showcases carvey 's talent for voices , but not nearly enough and not without taxing every drop of one 's patience to get to the good stuff .",0,0.66385967,0.4314405488036517,0.66385967,True,True,True,29,taxing
+561,"another one of those estrogen overdose movies like `` divine secrets of the ya ya sisterhood , '' except that the writing , acting and character development are a lot better .",1,0.34627876,0.2014071952433684,0.65372124,False,False,False,32,estrogen overdose
+618,"without non-stop techno or the existential overtones of a kieslowski morality tale , maelström is just another winter sleepers .",0,0.6483829,0.1259427939968897,0.6483829,True,True,False,20,maelström overtones sleepers
+749,a working class `` us vs. them '' opera that leaves no heartstring untugged and no liberal cause unplundered .,1,0.35625067,0.0492694470234149,0.64374933,False,True,False,20,heartstring unplundered untugged
+670,verbinski implements every hack-artist trick to give us the ooky-spookies .,0,0.628655,0.1265702026605975,0.628655,True,False,False,11,implements ooky spookies verbinski
+527,it has all the excitement of eating oatmeal .,0,0.59748125,0.3126013594371488,0.59748125,True,False,False,9,oatmeal
+656,"so much facile technique , such cute ideas , so little movie .",1,0.40403706,0.2773298321520119,0.5959629399999999,False,False,False,13,
+760,"writer/director joe carnahan 's grimy crime drama is a manual of precinct cliches , but it moves fast enough to cover its clunky dialogue and lapses in logic .",1,0.44036394,0.0110920687029818,0.55963606,False,False,True,29,carnahan grimy precinct
+292,the story and the friendship proceeds in such a way that you 're watching a soap opera rather than a chronicle of the ups and downs that accompany lifelong friendships .,0,0.55285656,0.5830722192035452,0.55285656,False,False,False,31,accompany
+220,the socio-histo-political treatise is told in earnest strides ... ( and ) personal illusion is deconstructed with poignancy .,1,0.49618536,0.9556461210712102,0.50381464,True,False,False,19,deconstructed histo socio strides

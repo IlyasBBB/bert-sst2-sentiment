@@ -1,0 +1,13 @@
+phrase,p_tfidf,p_bert,attendu,tfidf juste,bert juste
+this movie is not bad at all .,0.012951816905176404,0.9978258,positif,non,oui
+"i expected a masterpiece , and it is not even watchable .",0.2807278981364482,0.004681823,négatif,oui,oui
+"the actors are great , but the script is a disaster .",0.4593273369763466,0.011179602,négatif,oui,oui
+"the script is a disaster , but the actors are great .",0.4593273369763466,0.9916842,positif,non,oui
+"oh great , another two hours of my life i will never get back .",0.5574869501368389,0.05051767,négatif,non,oui
+"a film so bad it becomes hilarious , in the best way .",0.9383074515061335,0.99108386,positif,oui,oui
+it is hard to imagine a less inspired sequel .,0.02020340552671739,0.9284088,négatif,oui,non
+not a single scene feels false .,0.0016869966153172948,0.015469108,positif,non,non
+"the cinematography is breathtaking ; the dialogue , sadly , is not .",0.003587809131020767,0.10420354,négatif,oui,oui
+"i laughed , i cried , i bought the soundtrack .",0.9961829247251062,0.9990226,positif,oui,oui
+"a perfunctory , by-the-numbers thriller .",0.02348202914643594,0.041539967,négatif,oui,oui
+"an unpretentious , sweet-natured delight .",0.9999435422931122,0.9994,positif,oui,oui

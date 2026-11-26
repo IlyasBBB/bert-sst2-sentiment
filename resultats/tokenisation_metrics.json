@@ -1,0 +1,12 @@
+{
+  "mots_distincts_val": 4339,
+  "pct_mots_fragmentes": 30.214335100253514,
+  "mots_hors_train": 940,
+  "pct_hors_train_fragmentes": 61.702127659574465,
+  "jetons_inconnus_val": 0,
+  "unites_par_mot": 1.1849700809574093,
+  "p95_jetons": 35.0,
+  "p99_jetons": 46.0,
+  "max_jetons": 62,
+  "pct_tronques": 0.0
+}

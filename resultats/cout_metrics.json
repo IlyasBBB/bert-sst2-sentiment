@@ -1,0 +1,10 @@
+{
+  "device": "cuda",
+  "tfidf_s": 0.020547512999655737,
+  "tfidf_params": 71018,
+  "bert_s": 0.6338686349999989,
+  "bert_params": 109483778,
+  "bert_mo_float32": 437.935112,
+  "ratio_temps": 30.848922446751537,
+  "ecart_max_rechargement": 2.970809931390761e-08
+}
